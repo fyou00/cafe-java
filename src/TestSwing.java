@@ -16,11 +16,6 @@ public class TestSwing {
         // ??
         // ??
         // ??
-        // ??
-        // ??
-        // ??
-        // ??
-        // ??
         // Tombol
         JButton button = new JButton("Tampilkan");
         button.setBounds(90, 90, 120, 30);
