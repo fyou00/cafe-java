@@ -11,7 +11,16 @@ public class TestSwing {
         // TextField untuk input
         JTextField textField = new JTextField();
         textField.setBounds(50, 40, 200, 30);
-
+        // ??
+        // ??
+        // ??
+        // ??
+        // ??
+        // ??
+        // ??
+        // ??
+        // ??
+        // ??
         // Tombol
         JButton button = new JButton("Tampilkan");
         button.setBounds(90, 90, 120, 30);
