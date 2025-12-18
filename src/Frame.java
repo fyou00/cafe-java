@@ -259,20 +259,12 @@ public class Frame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-   
-    String[][] menuData = {
-        {"Espresso", "Americano", "Nasi Goreng", "Brownies"}, // Semua
-        {"Espresso", "Americano", "Cappuccino"},              // Kopi
-        {"Matcha Latte", "Thai Tea", "Chocolate"},            // Non Kopi
-        {"Nasi Goreng", "Mie Goreng", "French Fries"}         // Makanan
-    };
-    
+       
     private void comboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxActionPerformed
         switch(comboBox.getSelectedIndex()) {
             case 0 -> testlist1.setText("Semua");
             case 1 -> testlist1.setText("Kopi");
             case 2 -> testlist1.setText("Non Kopi");
-            default -> testlist1.setText("difold");
         }
     }//GEN-LAST:event_comboBoxActionPerformed
 
