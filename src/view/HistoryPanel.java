@@ -95,7 +95,7 @@ public class HistoryPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        txtDetail = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableHistory = new javax.swing.JTable();
 
@@ -103,11 +103,11 @@ public class HistoryPanel extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(147, 104, 58));
 
-        jLabel1.setBackground(new java.awt.Color(147, 104, 58));
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("RIWAYAT PESANAN");
+        txtDetail.setBackground(new java.awt.Color(147, 104, 58));
+        txtDetail.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        txtDetail.setForeground(new java.awt.Color(255, 255, 255));
+        txtDetail.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtDetail.setText("RIWAYAT PESANAN");
 
         tableHistory.setBackground(new java.awt.Color(247, 241, 222));
         tableHistory.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -128,7 +128,7 @@ public class HistoryPanel extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtDetail, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 659, Short.MAX_VALUE)
@@ -138,7 +138,7 @@ public class HistoryPanel extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(txtDetail)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -158,9 +158,9 @@ public class HistoryPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tableHistory;
+    private javax.swing.JLabel txtDetail;
     // End of variables declaration//GEN-END:variables
 }
