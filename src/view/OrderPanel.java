@@ -243,7 +243,7 @@ public class OrderPanel extends javax.swing.JPanel {
 
         jButton3.setText("jButton3");
 
-        jButton4.setText("jButton4");
+        jButton4.setText("maila imut");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
