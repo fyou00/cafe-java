@@ -1,38 +1,19 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import view.MainFrame_old;
 import javax.swing.*;
 
-/**
- *
- * @author muham
- */
 public class Main {
     public static void main(String[] args) {
-        String[] categories = {"Semua", "Kopi", "Non Kopi", "Makanan"};
-        JComboBox<String> comboBox = new JComboBox<>(categories);
+        // Set Look and Feel
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         
-        String[][] menuData = {
-            {"Espresso", "Americano", "Nasi Goreng", "Brownies"}, // Semua
-            {"Espresso", "Americano", "Cappuccino"},              // Kopi
-            {"Matcha Latte", "Thai Tea", "Chocolate"},            // Non Kopi
-            {"Nasi Goreng", "Mie Goreng", "French Fries"}         // Makanan
-        };
-        
-        comboBox.addActionListener((ActionEvent e) -> {
-            int index = comboBox.getSelectedIndex();
-            
-            // Clear list dulu
-            listModel.clear();
-            
-            // Add items berdasarkan kategori
-            for (String item : menuData[index]) {
-                listModel.addElement(item);
-            }
+        // Run application
+        SwingUtilities.invokeLater(() -> {
+            MainFrame_old frame = new MainFrame_old();
+            frame.setVisible(true);
         });
-        
-        JFrame frame = new Frame();
-        
-        frame.setVisible(true);
     }
-    
 }
