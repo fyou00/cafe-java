@@ -5,6 +5,7 @@ import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import model.Order;
 
 public class OrderPanel extends javax.swing.JPanel {
 
@@ -152,11 +153,18 @@ public class OrderPanel extends javax.swing.JPanel {
                 return;
             }
             
-            controller.completeOrder();
-            JOptionPane.showMessageDialog(this, 
-                "Pesanan berhasil!\nOrder ID: " + controller.getCurrentOrder().getOrderId(),
-                "Sukses", JOptionPane.INFORMATION_MESSAGE);
+//            controller.completeOrder();
+//            JOptionPane.showMessageDialog(this, 
+//                "Pesanan berhasil!\nOrder ID: " + controller.getCurrentOrder().getOrderId(),
+//                "Sukses", JOptionPane.INFORMATION_MESSAGE);
             
+            Order finishedOrder = controller.getCurrentOrder();
+            controller.completeOrder();
+
+            JOptionPane.showMessageDialog(this,
+                "Pesanan berhasil!\nOrder ID: " + finishedOrder.getOrderId(),
+                "Sukses", JOptionPane.INFORMATION_MESSAGE);
+
             refreshCart();
             txtCustomer.setText("");
             loadMenuData();
